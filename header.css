@@ -1,0 +1,56 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 5%;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+#italy-flag{
+  width: 156px;
+  height: 40px;
+  background: linear-gradient(
+    to right,
+    green 0%,
+    green 33.33%,
+    white 33.33%,
+    white 66.66%,
+    red 66.66%,
+    red 100%
+  );
+  z-index: 10;
+  margin-inline: auto;
+}
+
+.header-button {
+  font-family: "Afacad", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 30px;
+}
+
+.left-header {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  margin-top: 50px;
+}
+
+.right-header {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 50px;
+}
+
+.lv-flag {
+  margin-top:auto;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo > img {
+  margin-top: 5px;
+}

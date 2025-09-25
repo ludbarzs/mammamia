@@ -2,9 +2,10 @@ header {
   display: flex;
   justify-content: space-between;
   margin-inline: 5%;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
 #italy-flag{
   width: 156px;
   height: 40px;
@@ -26,29 +27,53 @@ header {
   font-weight: 600;
   color: white;
   font-size: 30px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;      /* bottom of the button text */
+  width: 0;
+  top: 36px;
+  border-radius: 1px;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+  width: 40px;
+}
+
+.header-button:hover::before {
+  width: 100%;
 }
 
 .left-header {
   display: flex;
   justify-content: space-between;
-  width: 340px;
-  margin-top: 50px;
+  width: 350px;
+  margin-top: 45px;
 }
 
 .right-header {
   display: flex;
   justify-content: space-between;
-  width: 400px;
-  margin-top: 50px;
+  width: 350px;
+  margin-top: 45px;
 }
 
 .lv-flag {
   margin-top:auto;
+  margin-bottom:auto;
+  cursor: pointer;
 }
 
 .logo{
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .logo > img {
